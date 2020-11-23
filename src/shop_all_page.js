@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Fragment} from "react";
 import './index.css';
 // import './css/core-style.css';
 import './css/bootstrap.min.css';
@@ -31,7 +31,7 @@ import treeBigProduct from './img/product-img/product-big-3.jpg';
 
 function AllShop () {
     return (
-        <>
+        <Fragment>
             <header className="header_area">
                 <div className="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
                     {/* Classy Menu */}
@@ -507,7 +507,7 @@ function AllShop () {
                     </div>
                 </div>
             </footer>
-        </>
+        </Fragment>
 
 
     );
