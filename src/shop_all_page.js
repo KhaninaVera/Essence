@@ -1,13 +1,14 @@
 import React, {Fragment} from "react";
 import './index.css';
-// import './css/core-style.css';
+import './css/core-style.css';
 import './css/bootstrap.min.css';
 import './css/classy-nav.min.css';
 import './css/nice-select.css';
 import './css/animate.css';
 import './css/font-awesome.min.css';
 import './css/magnific-popup.css';
-import  firstBgImg from  './img/bg-img/bg-1.jpg';
+import './css/owl.carousel.css';
+//import './assets/css/jquery-ui.min.css';
 import logo from  './img/core-img/logo.png';
 import heart from './img/core-img/heart.svg';
 import bag from './img/core-img/bag.svg';
@@ -18,15 +19,14 @@ import secondProduct from './img/product-img/product-2.jpg';
 import thirdProduct from './img/product-img/product-3.jpg';
 import fourthProduct from './img/product-img/product-4.jpg';
 import fifthProduct from './img/product-img/product-5.jpg';
-import sixhProduct from './img/product-img/product-6.jpg';
-import seventhProduct from './img/product-img/product-7.jpg';
-import eighthProduct from './img/product-img/product-8.jpg';
-import ninthProduct from './img/product-img/product-9.jpg';
-import OneBigProduct from './img/product-img/product-big-1.jpg';
-import twoBigProduct from './img/product-img/product-big-2.jpg';
-import treeBigProduct from './img/product-img/product-big-3.jpg';
+// import sixhProduct from './img/product-img/product-6.jpg';
+// import seventhProduct from './img/product-img/product-7.jpg';
+// import eighthProduct from './img/product-img/product-8.jpg';
+// import ninthProduct from './img/product-img/product-9.jpg';
+// import OneBigProduct from './img/product-img/product-big-1.jpg';
+// import twoBigProduct from './img/product-img/product-big-2.jpg';
+// import treeBigProduct from './img/product-img/product-big-3.jpg';
 
-// import './css/owl.carousel.css';
 
 
 function AllShop () {
@@ -37,7 +37,7 @@ function AllShop () {
                     {/* Classy Menu */}
                     <nav className="classy-navbar" id="essenceNav">
                         {/* Logo */}
-                        <a className="nav-brand" href="/public/index.html"><img src={logo} alt /></a>
+                        <a className="nav-brand" href="../public/index.html"><img src={logo} alt /></a>
                         {/* Navbar Toggler */}
                         <div className="classy-navbar-toggler">
                             <span className="navbarToggler"><span /> <span /> <span /> </span>
@@ -84,7 +84,7 @@ function AllShop () {
                                     </li>
                                     <li><a href="#">Pages</a>
                                         <ul className="dropdown">
-                                            <li><a href="/public/index.html">Home</a></li>
+                                            <li><a href="../public/index.html">Home</a></li>
                                             <li><a href="shop.html">Shop</a></li>
                                             <li><a href="single-product-details.html">Product Details</a></li>
                                             <li><a href="checkout.html">Checkout</a></li>
@@ -112,15 +112,15 @@ function AllShop () {
                         </div>
                         {/* Favourite Area */}
                         <div className="favourite-area">
-                            <a href="#"><img src={heart}/></a>
+                            <a href="#"><img src={heart} alt /></a>
                         </div>
                         {/* User Login Info */}
                         <div className="user-login-info">
-                            <a href="#"><img src={user}/></a>
+                            <a href="#"><img src={user} alt /></a>
                         </div>
                         {/* Cart Area */}
                         <div className="cart-area">
-                            <a href="#" id="essenceCartBtn"><img src={bag}/> <span>3</span></a>
+                            <a href="#" id="essenceCartBtn"><img src={bag} alt /> <span>3</span></a>
                         </div>
                     </div>
                 </div>
@@ -131,7 +131,7 @@ function AllShop () {
             <div className="right-side-cart-area">
                 {/* Cart Button */}
                 <div className="cart-button">
-                    <a href="#" id="rightSideCart"><img src={bag} /> <span>3</span></a>
+                    <a href="#" id="rightSideCart"><img src={bag} alt /> <span>3</span></a>
                 </div>
                 <div className="cart-content d-flex">
                     {/* Cart List Area */}
@@ -139,7 +139,7 @@ function AllShop () {
                         {/* Single Cart Item */}
                         <div className="single-cart-item">
                             <a href="#" className="product-image">
-                                <img src={firstProduct} className="cart-thumb" />
+                                <img src={firstProduct} className="cart-thumb" alt />
                                 {/* Cart Item Desc */}
                                 <div className="cart-item-desc">
                                     <span className="product-remove"><i className="fa fa-close" aria-hidden="true" /></span>
@@ -154,7 +154,7 @@ function AllShop () {
                         {/* Single Cart Item */}
                         <div className="single-cart-item">
                             <a href="#" className="product-image">
-                                <img src={secondProduct} className="cart-thumb" />
+                                <img src={secondProduct} className="cart-thumb" alt />
                                 {/* Cart Item Desc */}
                                 <div className="cart-item-desc">
                                     <span className="product-remove"><i className="fa fa-close" aria-hidden="true" /></span>
@@ -169,7 +169,7 @@ function AllShop () {
                         {/* Single Cart Item */}
                         <div className="single-cart-item">
                             <a href="#" className="product-image">
-                                <img src={thirdProduct} className="cart-thumb"/>
+                                <img src={thirdProduct} className="cart-thumb" alt />
                                 {/* Cart Item Desc */}
                                 <div className="cart-item-desc">
                                     <span className="product-remove"><i className="fa fa-close" aria-hidden="true" /></span>
@@ -199,7 +199,7 @@ function AllShop () {
             </div>
             {/* ##### Right Side Cart End ##### */}
             {/* ##### Welcome Area Start ##### */}
-            <section className="welcome_area bg-img background-overlay" style={{backgroundImage: 'url(${firstBgImg})'} }>
+            <section className="welcome_area bg-img background-overlay" style={{backgroundImage: 'url(./img/bg-img/bg-1.jpg)'}}>
                 <div className="container h-100">
                     <div className="row h-100 align-items-center">
                         <div className="col-12">

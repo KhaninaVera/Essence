@@ -12,7 +12,6 @@ import AllShop from "./shop_all_page";
 
 function App() {
   return (
-
       <AllShop />
   );
 }
